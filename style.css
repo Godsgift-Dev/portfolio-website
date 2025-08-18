@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 :root {
-    --color-background: rgb(255, 255, 255);
+    --color-background: #ffffff;
     --color-heading: #0f172a;
     --color-accent: #ffc107;
     --color-border: #e2e8f0;
@@ -60,12 +60,17 @@ body {
     background-color: inherit;
     overflow: hidden;
     padding: 20px 0;
+    height: 50px;
 }
 
 .header h1 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
-    text-transform: capitalize
+    text-transform: capitalize;
+}
+
+.header h1 .accent-color {
+    color: var(--color-accent);
 }
 
 .header .nav-lists ul {
@@ -75,4 +80,35 @@ body {
 
 .nav-lists ul li {
     margin-right: 10px;
+}
+
+.nav-lists ul li a {
+    font-size: 14px;
+    padding: 0 8px;
+    color: var(--color-heading);
+}
+
+.nav-lists ul li a:hover {
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+.nav-lists ul li a.active {
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.header .resume {
+    background-color: var(--color-accent);
+    color: var(--color-heading);
+    padding: 6px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.header .resume:hover {
+    color: var(--color-accent);
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+
 }
