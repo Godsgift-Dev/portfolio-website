@@ -48,8 +48,8 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
     background-color: inherit;
 }
 
@@ -59,8 +59,10 @@ body {
     justify-content: space-between;
     background-color: inherit;
     overflow: hidden;
-    padding: 20px 0;
+    padding: 20px 5%;
     height: 50px;
+    background-color: var(--color-background);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
